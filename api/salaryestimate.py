@@ -11,11 +11,11 @@ api = Api(salary_estimate_api)
 class SalaryEstimateAPI(Resource):
     def __init__(self):
         # Load the heart disease dataset
-        heart_data = pd.read_csv('/home/jared/vscode/JaredsBlogBE/data/DatasetHeartDisease.csv')
+        pay_data = pd.read_csv('/group-backend/api/')
 
         # Perform data preprocessing
-        X = heart_data.drop('target', axis=1)
-        y = heart_data['target']
+        X = pay_data.drop('target', axis=1)
+        y = pay_data['target']
         self.scaler = StandardScaler()
         X_scaled = self.scaler.fit_transform(X)
 

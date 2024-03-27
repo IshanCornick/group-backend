@@ -1,0 +1,28 @@
+_title,_field,_qualification,_pay
+ Software Engineeer,Computer Science,Bachelors,37
+ Software Engineeer,Computer Science,Masters,45
+ Software Engineeer,Computer Science,pHd,56
+Data Scientist,Computer Science,Bachelors,32
+Data Scientist,Computer Science,Masters,41
+Data Scientist,Computer Science,pHd,49
+Mechanical Designer,Engineering,Bachelors,33
+Mechanical Designer,Engineering,Masters,42
+Mechanical Designer,Engineering,pHd,51
+Simulation Tester,Engineering,Bachelors,30
+Simulation Tester,Engineering,Masters,37
+Simulation Tester,Engineering,pHd,45
+Lawyer,Law,Bachelors,38
+Lawyer,Law,Masters,46
+Lawyer,Law,Masters ,55
+Judge,Law,Bachelors,35
+Judge,Law,Masters,48
+Judge,Law,Masters,62
+Doctor,Medical,Bachelors,30
+Doctor,Medical,Masters,30
+Doctor,Medical,pHd,30
+Nurse,Medical,Bachelors,30
+Nurse,Medical,Masters,30
+Nurse,Medical,pHd,30
+Surgeon,Medical,Bachelors,30
+Surgeon,Medical,Masters,30
+Surgeon,Medical,pHd,30
