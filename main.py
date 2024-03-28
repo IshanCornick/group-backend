@@ -5,8 +5,7 @@ from flask import render_template,request  # import render_template from "public
 from flask.cli import AppGroup
 from api.titanic import titanic_api
 from auth_middleware import token_required
-from api.salaryestimate import salary_estimate_api
-
+from api.rocketsuccessrate import rocketsuccess_api
 
 # import "packages" from "this" project
 from __init__ import app, db, cors  # Definitions initialization
@@ -33,7 +32,7 @@ app.register_blueprint(player_api)
 app.register_blueprint(app_projects) # register app pages
 app.register_blueprint(meme_api)
 app.register_blueprint(titanic_api)
-app.register_blueprint(salary_estimate_api)
+app.register_blueprint(rocketsuccess_api)
 
 @app.errorhandler(404)  # catch for URL not found
 def page_not_found(e):
@@ -71,4 +70,6 @@ app.cli.add_command(custom_cli)
         
 # this runs the application on the development server
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port="8082")
+    app.run(host="0.0.0.0", port="8082")
+if __name__ == '__main__':
+    app.run(debug=True)

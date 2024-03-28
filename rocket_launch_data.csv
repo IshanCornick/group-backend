@@ -1,0 +1,7 @@
+payload_mass,origin_country,company,engine_strength,success_rate
+50,USA,NASA,37,Success
+20,USA,NASA,45,Success
+74,Taiwan,Firefly,56,Failure
+438,USA,SpaceX,41,Failure
+2309,USA,SpaceX,49,Success
+24,USA,SpaceX,33,Failure

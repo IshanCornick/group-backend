@@ -49,7 +49,7 @@ class TitanicAPI(Resource):
             }
         except Exception as e:
             return {'error': str(e)}
-
+    
 
     def post(self):
         try:

@@ -1,34 +1,15 @@
 import csv
 
-with open("jobs.csv", mode = "w") as csvfile:
-    fieldnames = ["_title", "_field", "_qualification",  "_pay"]
+with open("rocket_launch_data.csv", mode = "w") as csvfile:
+    fieldnames = ['payload_mass', 'origin_country', 'company', 'engine_strength', 'success_rate']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     writer.writeheader()
-    writer.writerow({"_title": " Software Engineeer", "_field": "Computer Science", "_qualification": "Bachelors", "_pay": "37"})
-    writer.writerow({"_title": " Software Engineeer", "_field": "Computer Science", "_qualification": "Masters", "_pay": "45"})
-    writer.writerow({"_title": " Software Engineeer", "_field": "Computer Science", "_qualification": "pHd", "_pay": "56"})
-    writer.writerow({"_title": "Data Scientist", "_field": "Computer Science", "_qualification": "Bachelors", "_pay": "32"})
-    writer.writerow({"_title": "Data Scientist", "_field": "Computer Science", "_qualification": "Masters", "_pay": "41"})
-    writer.writerow({"_title": "Data Scientist", "_field": "Computer Science", "_qualification": "pHd", "_pay": "49"})
-    writer.writerow({"_title": "Mechanical Designer", "_field": "Engineering", "_qualification": "Bachelors", "_pay": "33"})
-    writer.writerow({"_title": "Mechanical Designer", "_field": "Engineering", "_qualification": "Masters", "_pay": "42"})
-    writer.writerow({"_title": "Mechanical Designer", "_field": "Engineering", "_qualification": "pHd", "_pay": "51"})
-    writer.writerow({"_title": "Simulation Tester", "_field": "Engineering", "_qualification": "Bachelors", "_pay": "30"})
-    writer.writerow({"_title": "Simulation Tester", "_field": "Engineering", "_qualification": "Masters", "_pay": "37"})
-    writer.writerow({"_title": "Simulation Tester", "_field": "Engineering", "_qualification": "pHd", "_pay": "45"})
-    writer.writerow({"_title": "Lawyer", "_field": "Law", "_qualification": "Bachelors", "_pay": "38"})
-    writer.writerow({"_title": "Lawyer", "_field": "Law", "_qualification": "Masters", "_pay": "46"})
-    writer.writerow({"_title": "Lawyer", "_field": "Law", "_qualification": "Masters ", "_pay": "55"})
-    writer.writerow({"_title": "Judge", "_field": "Law", "_qualification": "Bachelors", "_pay": "35"})
-    writer.writerow({"_title": "Judge", "_field": "Law", "_qualification": "Masters", "_pay": "48"})
-    writer.writerow({"_title": "Judge", "_field": "Law", "_qualification": "Masters", "_pay": "62"})
-    writer.writerow({"_title": "Doctor", "_field": "Medical", "_qualification": "Bachelors", "_pay": "30"})
-    writer.writerow({"_title": "Doctor", "_field": "Medical", "_qualification": "Masters", "_pay": "30"})
-    writer.writerow({"_title": "Doctor", "_field": "Medical", "_qualification": "pHd", "_pay": "30"})
-    writer.writerow({"_title": "Nurse", "_field": "Medical", "_qualification": "Bachelors", "_pay": "30"})
-    writer.writerow({"_title": "Nurse", "_field": "Medical", "_qualification": "Masters", "_pay": "30"})
-    writer.writerow({"_title": "Nurse", "_field": "Medical", "_qualification": "pHd", "_pay": "30"})
-    writer.writerow({"_title": "Surgeon", "_field": "Medical", "_qualification": "Bachelors", "_pay": "30"})
-    writer.writerow({"_title": "Surgeon", "_field": "Medical", "_qualification": "Masters", "_pay": "30"})
-    writer.writerow({"_title": "Surgeon", "_field": "Medical", "_qualification": "pHd", "_pay": "30"})
-
+    writer.writerow({"payload_mass": "50", "origin_country": "USA", "company": "NASA", "engine_strength": "37", "success_rate": "Success"})
+    writer.writerow({"payload_mass": "20", "origin_country": "USA", "company": "NASA", "engine_strength": "45", "success_rate": "Success"})
+    writer.writerow({"payload_mass": "74", "origin_country": "Taiwan", "company": "Firefly", "engine_strength": "56", "success_rate": "Failure"})
+    writer.writerow({"payload_mass": "23", "origin_country": "India", "company": "ISRO", "engine_strength": "32", "success_rate": "Failure"})
+    writer.writerow({"payload_mass": "438", "origin_country": "USA", "company": "SpaceX", "engine_strength": "41", "success_rate": "Failure"})
+    writer.writerow({"payload_mass": "2309", "origin_country": "USA", "company": "SpaceX", "engine_strength": "49", "success_rate": "Success"})
+    writer.writerow({"payload_mass": "24", "origin_country": "USA", "company": "SpaceX", "engine_strength": "33","success_rate": "Failure"})
+    writer.writerow({"payload_mass": "2", "origin_country": "India", "company": "ISRO", "engine_strength": "42","success_rate": "Success"})
+   
