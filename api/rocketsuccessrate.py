@@ -2,7 +2,6 @@ from flask import Blueprint, request, jsonify
 from flask_restful import Api, Resource
 from model.rocketsuccessratemodel import DecisionTreeClassifier as dt
 from model.rocketsuccessratemodel import OneHotEncoder as enc
-from sklearn.preprocessing import OneHotEncoder
 from sklearn.linear_model import LogisticRegression
 import pandas as pd
 
@@ -16,8 +15,9 @@ api = Api(rocketsuccess_api)
 dt = dt  # Assuming dt is already trained
 enc = enc  # Assuming enc is already initialized and fitted
 class RocketSucessAPI(Resource):
+
     def __init__(self):
-        rocket_data = pd.read_csv('/group-backend/api/')
+        rocket_data = pd.read_csv('rocket_launch_data.csv')
         td = rocket_data.copy()
 
         self.logreg = LogisticRegression(max_iter=1000)
